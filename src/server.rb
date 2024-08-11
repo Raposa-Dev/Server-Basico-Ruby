@@ -10,7 +10,7 @@ server = WEBrick::HTTPServer.new(Port: 3000)
 trap 'INT' do server.shutdown end
 
 server.mount_proc '/index.html' do |request, response|
-  AppRoutes.call(request, response)
+  HomeRoutes.call(request, response)
 end
 
 server.mount_proc '/about.html' do |request, response|

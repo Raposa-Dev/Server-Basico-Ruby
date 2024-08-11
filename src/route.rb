@@ -1,6 +1,6 @@
 require 'webrick'
 
-module AppRoutes
+module HomeRoutes
   def self.call(request, response)
     response.status = 200
     response.content_type = 'text/html'
